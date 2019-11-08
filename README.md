@@ -15,9 +15,8 @@ Usage options:
       -l specifies the LUT used (from _LUTs folder)      
       -if -i is not used, all files in the current directory and all subdirectories (except _LUTs and _OUTPUT) will be searched
       -if -o is not used, the output file path will automatically be the same as the input, under the _OUTPUT folder
-      -if -l is not used, lut-day.png is used
-      
-      example command:
+      -if -l is not used, lut-day.png is used  
+    example command:
       LUT.py -i nuclear_furnace.png -o _OUTPUT/nuclear_furnace.png -l lut-day.png
     
   C. Drag&drop a file on LUT.py
