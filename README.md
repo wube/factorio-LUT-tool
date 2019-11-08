@@ -8,7 +8,7 @@ A tool which applies LUT colours to images.
 
 # Usage methods:
 
-## A. Process all images automatically
+## A. Process all images in the folder automatically
 * Copy the LUT.py and _LUTs folder into your mod directory.
 * Launch LUT.py directly, without any arguments.
 * ALL found *.PNG images in this directory and subdirectories will be converted.
