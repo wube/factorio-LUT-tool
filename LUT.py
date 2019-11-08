@@ -124,27 +124,14 @@ def run(options):
   lut_filename = options['lut']  
   load_lut(lut_filename)
 
-  dropped_instructions = sys.argv
-
-  #input(sys.argv)
-  if options['input'] == None:
-    if os.path.realpath(__file__) in dropped_instructions:
-      dropped_instructions.remove(os.path.realpath(__file__))
-  else:
-    dropped_instructions = options['input']
-
-  if dropped_instructions != [] and dropped_instructions != '':
-    print('Detected inputs:')
-    print(dropped_instructions)
-    # --------------------------------------------------------------------
-    # the main run process
+  if options['input'] != '':  
     input_filename = options['input']
     output_filename = options['output']
     
     if options['output'] == '':
       output_filename = os.path.join('_OUTPUT', input_filename)
     process_image(input_filename, output_filename)
-  elif dropped_instructions == '':
+  else:
     # walk through the directory and process all PNG files
     current_script_path = os.path.realpath(__file__)
     current_script_directory = os.path.dirname(current_script_path)
@@ -164,9 +151,6 @@ def run(options):
       relative_output_path = os.path.join('_OUTPUT', relative_input_path)
       process_image(input_path, relative_output_path)
     print('Walked instructions detected:\n', walked_instruction_list)
-  
-  else:
-    print('No input given.')
 
 if __name__ == '__main__':
   if len(sys.argv) > 2:
