@@ -2,7 +2,11 @@
 
 A tool which applies LUT colours to images.
 
-## Usage options:
+
+# Requires:
+ * Python 3.7+ (might work with lower versions, but I tested with 3.7)
+
+# Usage options:
 
   ## A. Process all images automatically
     * Copy the LUT.py and _LUTs folder into your mod directory
@@ -26,7 +30,5 @@ A tool which applies LUT colours to images.
   ## C. Drag&drop a file on LUT.py
     * lut-day will be applied to the file.
 
-# Requires:
- * Python 3.7+ (might work with lower versions, but I tested with 3.7)
 
 You can find which images got which LUT applied in the vanilla_instructions directory.
