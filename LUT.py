@@ -13,13 +13,9 @@ Methods to launch this script:
     - if -l is not used, lut-day.png is used
 
 version 1.0
-2019-10-30
+2019-11-08
 
 '''
-
-
-
-
 
 import argparse
 import sys
