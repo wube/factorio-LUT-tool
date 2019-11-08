@@ -4,15 +4,15 @@ A tool which applies LUT colours to images.
 
 
 # Requires:
-* Python 3.7+ (might work with lower versions, but I tested with 3.7)
+* [Python 3.7+](https://www.python.org/downloads/)
 
-# Usage options:
+# Usage methods:
 
 ## A. Process all images automatically
-* Copy the LUT.py and _LUTs folder into your mod directory
-* Launch LUT.py directly, without any arguments
-* ! ALL found *.PNG images in this directory and subdirectories will be converted
-* ! Outputs can be found in _OUTPUT folder.
+* Copy the LUT.py and _LUTs folder into your mod directory.
+* Launch LUT.py directly, without any arguments.
+* ALL found *.PNG images in this directory and subdirectories will be converted.
+* Outputs can be found in _OUTPUT folder.
     
 ## B. Process only selected images
 Launch LUT.py with arguments
@@ -23,7 +23,7 @@ Launch LUT.py with arguments
 * -if -o is not used, the output file path will automatically be the same as the input, under the _OUTPUT folder
 * -if -l is not used, lut-day.png is used  
     
-example command:
+Example command:
 * LUT.py -i nuclear_furnace.png -o _OUTPUT/nuclear_furnace.png -l lut-day.png
     
 ## C. Drag&drop a file on LUT.py
