@@ -126,7 +126,7 @@ def run(options):
 
   dropped_instructions = sys.argv
 
-  input(sys.argv)
+  #input(sys.argv)
   if options['input'] == None:
     if os.path.realpath(__file__) in dropped_instructions:
       dropped_instructions.remove(os.path.realpath(__file__))
