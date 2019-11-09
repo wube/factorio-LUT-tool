@@ -5,6 +5,7 @@ A tool which applies LUT colours to images.
 
 # Requires:
 * [Python 3.7+](https://www.python.org/downloads/)
+* [Pillow](https://pillow.readthedocs.io/en/stable/)
 
 # Usage methods:
 
